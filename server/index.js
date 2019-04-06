@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const pino = require('express-pino-logger')();
 
 const app = express();
-app.use(bodyParseer.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(pino);
 
 app.get('/api/greeting', (req, res) => {
